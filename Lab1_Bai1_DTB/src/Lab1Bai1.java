@@ -8,6 +8,7 @@ public class Lab1Bai1 {
 		String hoTen = scanner.nextLine();
 		System.out.print("Điểm TB: ");
 		double diemTB = scanner.nextDouble();
+		System.out.printf("%s %fđiểm", hoTen, diemTB);
 	}
 
 }
