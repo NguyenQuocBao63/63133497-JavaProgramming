@@ -5,32 +5,56 @@ public class SanPham {
 	String tenSP;
 	String loaiSP;  
 	String anhSP;   // tên file ảnh
-	//Ham tao
+	
 	public SanPham() {
-		// khởi tạo giá trị ban đầu cho các thuộc tính nếu có ở đây
+		super();
 	}
-	
-	//public SanPham(int _maSP, String _tenSP, String _loaiSP, String _anhSP) {
-		// khởi tạo giá trị ban đầu cho các thuộc tính nếu có ở đây
-		//maSP = _maSP;
-		//tenSP = _tenSP;
-		//loaiSP = _loaiSP;
-		//anhSP = _anhSP;
-	//}
-	
+
 	public SanPham(int maSP, String tenSP, String loaiSP, String anhSP) {
-		// khởi tạo giá trị ban đầu cho các thuộc tính nếu có ở đây
+		super();
 		this.maSP = maSP;
 		this.tenSP = tenSP;
 		this.loaiSP = loaiSP;
 		this.anhSP = anhSP;
 	}
-	//Các getter,setter
-	
-	public int	getMaSP() {
+
+	public int getMaSP() {
 		return maSP;
 	}
-	public void	setMaSP(int maSP) {
+
+	public void setMaSP(int maSP) {
 		this.maSP = maSP;
 	}
+
+	public String getTenSP() {
+		return tenSP;
+	}
+
+	public void setTenSP(String tenSP) {
+		this.tenSP = tenSP;
+	}
+
+	public String getLoaiSP() {
+		return loaiSP;
+	}
+
+	public void setLoaiSP(String loaiSP) {
+		this.loaiSP = loaiSP;
+	}
+
+	public String getAnhSP() {
+		return anhSP;
+	}
+
+	public void setAnhSP(String anhSP) {
+		this.anhSP = anhSP;
+	}
+
+	@Override
+	public String toString() {
+		return " [Mã SP=" + maSP + ", Tên SP=" + tenSP + ", Loại SP=" + loaiSP + " ]";
+	}
+	
+	
+	
 }
